@@ -1,0 +1,73 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+ <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+  <EditText
+      android:id="@+id/TFadress"
+      android:layout_width="353dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:autofillHints=""
+      android:ems="10"
+      android:inputType="textPersonName" />
+
+  <Button
+      android:id="@+id/Bsearch"
+      android:layout_width="182dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:onClick="onsearch"
+      android:text="@string/search" />
+
+
+</LinearLayout>
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content">
+
+  <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:map="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/map"
+      android:name="com.google.android.gms.maps.SupportMapFragment"
+      android:layout_width="363dp"
+      android:layout_height="678dp"
+      tools:context=".MapsActivity"
+      tools:layout="@android:layout/activity_list_item" />
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+
+  <Button
+      android:id="@+id/Bzoomin"
+      android:layout_width="48dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:onClick="onZoom"
+      android:text="^" />
+
+  <Button
+      android:id="@+id/Bzoomout"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:onClick="onZoom"
+      android:text="v" />
+
+ </LinearLayout>
+
+ </LinearLayout>
+
+</LinearLayout>
